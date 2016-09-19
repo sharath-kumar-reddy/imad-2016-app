@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/sharath-one', function (req, res){
-    res.send('request for sharath-one');
+    res.sendFile(path.join(__dirname, 'ui', 'sharath-one.html'));
 });
 app.get('/sharath-two', function (req, res){
     res.send('request for sharath-two');
